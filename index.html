@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masterclass en vivo · 4 movimientos estratégicos para escalar tu servicio online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1056257650151326');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1056257650151326&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<script>
+  // Evita que el navegador restaure una posición de scroll vieja al volver a esta URL
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0,0);
+</script>
+
+<style>
+  :root{
+    --cream:#FBF6EC;
+    --cream-deep:#F3E9D8;
+    --ink:#2D2550;
+    --ink-soft:#4A4066;
+    --lavender:#A78BC4;
+    --lavender-deep:#8B6FB0;
+    --highlight:#F0E1F5;
+    --gold:#C9A96E;
+    --line: rgba(45,37,80,0.14);
+    --wa:#25D366;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Public Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Fraunces', serif; font-weight:500; line-height:1.15; color:var(--ink);}
+  .wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  /* HERO */
+  .hero{ padding:52px 0 48px; text-align:center; }
+  .eyebrow-badge{
+    display:inline-block;
+    background:var(--ink);
+    color:var(--cream);
+    font-weight:700; font-size:12.5px; letter-spacing:0.08em;
+    text-transform:uppercase;
+    padding:9px 18px;
+    border-radius:100px;
+    margin-bottom:22px;
+  }
+  .hero h1{
+    font-size:clamp(1.9rem, 4.6vw, 2.7rem);
+    max-width:760px;
+    margin:0 auto 18px;
+  }
+  .hero h1 b{ color:var(--lavender-deep); font-weight:700; }
+  .hero .subtitle{
+    font-size:17px;
+    color:var(--ink-soft);
+    max-width:620px;
+    margin:0 auto 34px;
+    line-height:1.55;
+  }
+
+  .video-frame{
+    aspect-ratio:16/9;
+    max-width:720px;
+    margin:0 auto 30px;
+    border-radius:14px;
+    background:var(--ink);
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(45,37,80,0.22);
+  }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    background:var(--lavender-deep);
+    color:#fff;
+    font-weight:700;
+    font-size:16px;
+    text-decoration:none;
+    padding:18px 36px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    box-shadow:0 12px 26px rgba(139,111,176,0.35);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); box-shadow:0 16px 32px rgba(139,111,176,0.42); }
+  .btn-block{ width:100%; }
+
+  /* SECCIÓN PARA QUIÉN */
+  section{ padding:52px 0; }
+  .section-title{
+    text-align:center;
+    font-size:clamp(1.5rem, 3.6vw, 2rem);
+    margin-bottom:34px;
+  }
+  .quien-grid{
+    display:grid;
+    gap:16px;
+    max-width:680px;
+    margin:0 auto;
+  }
+  .quien-item{
+    display:flex;
+    gap:14px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:18px 20px;
+    font-size:15.5px;
+    line-height:1.5;
+    color:var(--ink-soft);
+  }
+  .quien-check{
+    flex:0 0 auto;
+    width:26px; height:26px;
+    border-radius:50%;
+    background:var(--lavender);
+    color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-size:14px;
+    margin-top:2px;
+  }
+
+  /* MOVIMIENTOS */
+  .movimientos-section{ background:var(--cream-deep); }
+  .movimientos-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    max-width:820px;
+    margin:0 auto;
+  }
+  @media (max-width:700px){ .movimientos-grid{ grid-template-columns:1fr; } }
+  .movimiento-card{
+    background:#fff;
+    border-radius:14px;
+    padding:26px 24px;
+    box-shadow:0 8px 24px rgba(45,37,80,0.08);
+  }
+  .movimiento-num{
+    font-family:'Fraunces', serif;
+    font-size:2rem;
+    color:var(--lavender);
+    margin-bottom:8px;
+    display:block;
+  }
+  .movimiento-card h3{ font-size:1.15rem; margin-bottom:8px; }
+  .movimiento-card p{ font-size:14.5px; color:var(--ink-soft); line-height:1.55; }
+
+  /* FORMULARIO */
+  .form-section{ padding-bottom:70px; }
+  .form-card{
+    max-width:520px;
+    margin:0 auto;
+    background:#fff;
+    border-radius:16px;
+    padding:38px 30px;
+    box-shadow:0 20px 50px rgba(45,37,80,0.14);
+  }
+  .form-card h2{ font-size:1.4rem; text-align:center; margin-bottom:26px; }
+  .field{ margin-bottom:16px; }
+  .field label{
+    display:block;
+    font-size:13px;
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+  .field input, .field select{
+    width:100%;
+    padding:13px 14px;
+    border-radius:8px;
+    border:1.5px solid var(--line);
+    font-size:15px;
+    font-family:inherit;
+    background:var(--cream);
+    color:var(--ink);
+  }
+  .field input:focus, .field select:focus{
+    outline:none;
+    border-color:var(--lavender);
+  }
+  .row-two{ display:grid; grid-template-columns:110px 1fr; gap:10px; }
+  .form-note{
+    text-align:center;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    margin-top:14px;
+    line-height:1.5;
+  }
+  .form-error{
+    display:none;
+    text-align:center;
+    color:#b3261e;
+    font-size:13.5px;
+    margin-top:12px;
+  }
+
+  footer{ text-align:center; padding:30px 0 50px; font-size:13px; color:var(--ink-soft); }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow-badge">Masterclass en vivo y gratuita · Jueves 8/10 · 10hs ARG</span>
+      <h1>4 movimientos estratégicos para <b>escalar tu servicio online</b> antes de que termine el año</h1>
+      <p class="subtitle">Dejá de intercambiar tus horas por ingresos en el 1:1 y aprendé a ordenar tu expertise en una oferta clara y deseada que te devuelva libertad económica y geográfica y te dé previsibilidad.</p>
+
+      <div class="video-frame" id="hero-video-frame">
+        <iframe
+          id="hero-video-iframe"
+          data-src="https://www.youtube.com/embed/1s8rH4064Qc?rel=0&amp;modestbranding=1&amp;playsinline=1"
+          width="1920" height="1080" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Masterclass 4 movimientos estratégicos">
+        </iframe>
+      </div>
+
+      <a href="#formulario" class="btn">Reservá tu lugar acá</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">¿Para quién es este espacio?</h2>
+      <div class="quien-grid">
+        <div class="quien-item"><span class="quien-check">✓</span> Sos psicóloga, terapeuta, coach, profesora o brindás un servicio profesional y querés elevar tu impacto y liderar programas de alto valor.</div>
+        <div class="quien-item"><span class="quien-check">✓</span> Tenés trayectoria, clientes y resultados pero sentís que tu negocio te cuesta la vida.</div>
+        <div class="quien-item"><span class="quien-check">✓</span> Ya no querés depender del boca en boca o de una agenda llena para crecer.</div>
+        <div class="quien-item"><span class="quien-check">✓</span> Estás cansada de la incertidumbre de no saber cuánto vas a ganar el próximo mes.</div>
+        <div class="quien-item"><span class="quien-check">✓</span> Querés subir tus precios pero te frena el miedo a perder clientes.</div>
+        <div class="quien-item"><span class="quien-check">✓</span> Sabés que tenés la capacidad de liderar algo mucho más grande, pero no encontrás la estructura estratégica para dar el salto.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="movimientos-section">
+    <div class="wrap">
+      <h2 class="section-title">Los 4 movimientos estratégicos que vamos a activar en vivo</h2>
+      <div class="movimientos-grid">
+        <div class="movimiento-card">
+          <span class="movimiento-num">1</span>
+          <h3>Impactá más</h3>
+          <p>El movimiento definitivo que rompe con el paradigma de 1:1 y la lógica lineal del esfuerzo para abrir las puertas a la escala.</p>
+        </div>
+        <div class="movimiento-card">
+          <span class="movimiento-num">2</span>
+          <h3>Recibí más</h3>
+          <p>Ponemos sobre la mesa el equilibrio justo, sano y real entre lo que entregás con tu don y la abundancia que te permitís recibir.</p>
+        </div>
+        <div class="movimiento-card">
+          <span class="movimiento-num">3</span>
+          <h3>Vendé más</h3>
+          <p>Sanamos el talón de Aquiles de toda experta. Para que puedas comunicar y vender tu servicio desde una conexión genuina y auténtica que te diferencie del resto.</p>
+        </div>
+        <div class="movimiento-card">
+          <span class="movimiento-num">4</span>
+          <h3>Crecé más</h3>
+          <p>Hackeamos el miedo a la exposición, a ser vistas y a las críticas. Hablamos de lo que implica crecer en grande y cómo reprogramar el bloqueo más profundo del merecimiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section" id="formulario">
+    <div class="wrap">
+      <div class="form-card">
+        <h2>Completá tus datos para asegurar tu acceso</h2>
+        <form id="webinar-form">
+          <div class="field">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="field">
+            <label for="profesion">Profesión / Especialidad</label>
+            <select id="profesion" name="profesion" required>
+              <option value="" disabled selected>Seleccioná una opción</option>
+              <option value="Terapeuta">Terapeuta</option>
+              <option value="Coach">Coach</option>
+              <option value="Profesora">Profesora</option>
+              <option value="Otro servicio profesional">Otro servicio profesional</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="whatsapp-numero">WhatsApp</label>
+            <div class="row-two">
+              <input type="tel" id="caracteristica" name="caracteristica" placeholder="Cód. área" inputmode="numeric" required>
+              <input type="tel" id="whatsapp-numero" name="whatsappNumero" placeholder="Número" inputmode="numeric" required>
+            </div>
+          </div>
+
+          <!-- Campos ocultos de tracking -->
+          <input type="hidden" id="utm_source" name="utm_source">
+          <input type="hidden" id="utm_medium" name="utm_medium">
+          <input type="hidden" id="utm_campaign" name="utm_campaign">
+          <input type="hidden" id="utm_content" name="utm_content">
+          <input type="hidden" id="utm_term" name="utm_term">
+          <input type="hidden" id="fbclid" name="fbclid">
+
+          <button type="submit" class="btn btn-block" id="submit-btn">Registrarme y unirme al grupo exclusivo de WhatsApp 🚀</button>
+          <p class="form-error" id="form-error">Hubo un error al enviar tu registro. Probá de nuevo en unos segundos.</p>
+          <p class="form-note">Al hacer click, serás redireccionada al grupo privado donde enviaré los recordatorios y el link de acceso al Meet.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>© Mar Alfonso · Masterclass en vivo</footer>
+
+  <script>
+    // Lazy-load del video: recién carga el iframe cuando entra en pantalla
+    (function () {
+      var frame = document.getElementById('hero-video-frame');
+      var iframe = document.getElementById('hero-video-iframe');
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            iframe.src = iframe.getAttribute('data-src');
+            obs.disconnect();
+          }
+        });
+      }, { threshold: 0.2 });
+      obs.observe(frame);
+    })();
+
+    // Captura de UTMs + fbclid de la URL hacia los campos ocultos del formulario
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid'].forEach(function (key) {
+        var el = document.getElementById(key);
+        if (el) el.value = params.get(key) || '';
+      });
+    })();
+
+    // ⚠️ Reemplazar por la URL del Web App de Google Apps Script una vez desplegado
+    var APPS_SCRIPT_URL = 'PEGAR_ACA_LA_URL_DEL_APPS_SCRIPT';
+
+    var form = document.getElementById('webinar-form');
+    var btn = document.getElementById('submit-btn');
+    var errorEl = document.getElementById('form-error');
+    var originalText = btn.innerHTML;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      errorEl.hidden = true;
+      btn.disabled = true;
+      btn.innerHTML = 'Enviando...';
+
+      var formData = new FormData(form);
+      var caracteristica = (formData.get('caracteristica') || '').replace(/\D/g, '');
+      var numero = (formData.get('whatsappNumero') || '').replace(/\D/g, '');
+      var whatsappCompleto = '+54 9 ' + caracteristica + ' ' + numero;
+      formData.set('whatsapp', whatsappCompleto);
+
+      fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      }).then(function () {
+        if (typeof fbq === 'function') { fbq('trackCustom', 'LeadWebinar'); }
+        window.location.href = 'gracias-webinar.html';
+      }).catch(function () {
+        errorEl.hidden = false;
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+      });
+    });
+  </script>
+
+</body>
+</html>
